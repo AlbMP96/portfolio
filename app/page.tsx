@@ -2,6 +2,8 @@
 
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { TypingAnimation } from '@/components/magicui/typing-animation';
+import { Waving } from '@/components/waving';
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -15,6 +17,8 @@ export default function Home() {
         setColor(resolvedTheme === 'dark' ? '#ffffff' : '#000000');
     }, [resolvedTheme]);
 
+    var greeting = `Hola, soy Alberto 👋`;
+
     return (
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
             <Particles
@@ -25,6 +29,9 @@ export default function Home() {
                 refresh
             />
             <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+                <TypingAnimation className="greeting">
+                    {greeting}
+                </TypingAnimation>
                 {/* <Image
                     className="dark:invert"
                     src="/next.svg"
