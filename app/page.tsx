@@ -5,6 +5,35 @@ import { useEffect, useState } from 'react';
 import { Wave } from '@/components/Wave';
 import { MorphingText } from '@/components/magicui/morphing-text';
 import { Particles } from '@/components/magicui/particles';
+import { IconCloud } from '@/components/magicui/icon-cloud';
+
+const slugs = [
+    'typescript',
+    'javascript',
+    'java',
+    'react',
+    'android',
+    'html5',
+    'css3',
+    'nodedotjs',
+    'express',
+    'nextdotjs',
+    'postgresql',
+    'nginx',
+    'vercel',
+    'docker',
+    'git',
+    'github',
+    'gitlab',
+    'visualstudiocode',
+    'androidstudio',
+    'vuedotjs',
+    'symphony',
+    'laravel',
+    'linux',
+    'tailwindcss',
+    'bootstrap',
+];
 
 export default function Home() {
     const { resolvedTheme } = useTheme();
@@ -15,6 +44,10 @@ export default function Home() {
     }, [resolvedTheme]);
 
     const texts = ['Alberto', 'desarrollador'];
+
+    const images = slugs.map(
+        (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+    );
 
     return (
         <div className="items-center justify-items-center h-screen font-[family-name:var(--font-geist-sans)] overflow-y-scroll snap-y snap-mandatory">
@@ -109,6 +142,9 @@ export default function Home() {
                             arcu, quis sodales elit tristique eget. Vivamus eget
                             nisi at ex vehicula cursus quis eu elit.
                         </p>
+                        <div className="relative flex size-full items-center justify-center overflow-hidden">
+                            <IconCloud images={images} />
+                        </div>
                     </div>
                 </div>
             </div>
