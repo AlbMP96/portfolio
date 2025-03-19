@@ -30,7 +30,7 @@ const slugs = [
     'visualstudiocode',
     'androidstudio',
     'vuedotjs',
-    'symphony',
+    'symfony',
     'laravel',
     'linux',
     'tailwindcss',
@@ -103,7 +103,7 @@ export default function Home() {
                             <p>
                                 He estudiado y practicado tanto tecnologías de
                                 FrontEnd como Vue, Tailwind o NextJS como
-                                tecnologías de BackEnd como son Symphony o
+                                tecnologías de BackEnd como son Symfony o
                                 Laravel.
                             </p>
                             <p>
