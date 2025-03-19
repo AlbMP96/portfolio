@@ -6,7 +6,6 @@ import { Wave } from '@/components/Wave';
 import { MorphingText } from '@/components/magicui/morphing-text';
 import { Particles } from '@/components/magicui/particles';
 import { IconCloud } from '@/components/magicui/icon-cloud';
-import { Button } from '@/components/ui/button';
 import { InteractiveHoverButton } from '@/components/magicui/interactive-hover-button';
 import { Mouse } from '@/components/Mouse';
 

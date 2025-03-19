@@ -1,6 +1,3 @@
-import { spawn } from 'child_process';
-import { span } from 'motion/react-client';
-
 export function Mouse() {
     const mouse = `.mouse {
 	width: 50px;

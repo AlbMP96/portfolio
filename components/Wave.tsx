@@ -1,6 +1,3 @@
-import { div } from 'motion/react-client';
-import styles from './Wave.module.css';
-
 export function Wave() {
     const wave = `.wave {
     animation-name: wave-animation;
